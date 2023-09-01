@@ -11,7 +11,7 @@
 
    ```bash
    git clone https://github.com/alfonsotis/Movies_API.git
-2. **Install dependancies, add data and run the server**
+2. **Install dependencies, add data and run the server**
     ```bash
     pipenv install
     pipenv shell
