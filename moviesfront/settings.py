@@ -86,15 +86,20 @@ WSGI_APPLICATION = 'moviesfront.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'moviesfront',
-        'HOST': 'localhost',
-        'USER': 'root',
-        'PASSWORD': 'Alfonso4$'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'moviesfront',
+    #     'HOST': 'localhost',
+    #     'USER': 'root',
+    #     'PASSWORD': 'Alfonso4$'
+    # }
 }
 
 REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
 }
 

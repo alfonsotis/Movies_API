@@ -1,3 +1,23 @@
+# Movie API - Installation and Run Instructions
+
+## Prerequisites
+
+- Python 3.x
+- Pipenv (for managing Python virtual environments)
+
+## Installation and Execution Steps
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/alfonsotis/Movies_API.git
+2. **Install dependancies, add data and run the server**
+    ```bash
+    pipenv install
+    pipenv shell
+    python manage.py migrate
+    python manage.py clean_data
+    python manage.py runserver
 # Movie API Documentation
 
 This API allows you to access and manage a list of movies. Below are the available endpoints and their usage:
