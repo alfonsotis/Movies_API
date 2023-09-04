@@ -18,9 +18,14 @@
     python manage.py migrate
     python manage.py clean_data
     python manage.py runserver
+3. **Run the tests**
+    #### Open a new terminal again in the proyects main folder and run the following command
+    ```bash
+    pytest
 # Movie API Documentation
 
-This API allows you to access and manage a list of movies. Below are the available endpoints and their usage:
+This API allows you to access and manage a list of movies. Below are the available endpoints and their usage, once you have installed it you can access and test the full documentation at:
+- http://127.0.0.1:8000/swagger/ :
 
 ## Movies List GET Endpoint
 
